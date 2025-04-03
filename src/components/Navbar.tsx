@@ -5,16 +5,13 @@ export default function Navbar() {
     <nav>
       <ul className="flex space-x-4">
         <li>
-          <Link href="/">Home</Link>
+          <Link href="/menu">Meny</Link>
         </li>
         <li>
-          <Link href="/menu">Menu</Link>
+          <Link href="/hours">Åpningstider</Link>
         </li>
         <li>
-          <Link href="/about">About</Link>
-        </li>
-        <li>
-          <Link href="/contact">Contact</Link>
+          <Link href="/contact">Kontakt oss</Link>
         </li>
       </ul>
     </nav>

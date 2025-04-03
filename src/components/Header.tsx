@@ -1,11 +1,20 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import Navbar from './Navbar';
 
 export default function Header() {
   return (
-    <header className="bg-gray-800 text-white p-4">
+    <header className="bg-white text-black p-4">
       <div className="container mx-auto flex justify-between items-center">
-        <h1 className="text-xl font-bold">Kjøkkenet Cafe & Delikatesse</h1>
+        <Link href="/">
+          <Image
+            src="/kjokkenet_logo2.png"
+            alt="Kjøkkenet Cafe & Delikatesse"
+            width={250}
+            height={250}
+            className="object-contain"
+          />
+        </Link>
         <Navbar />
       </div>
     </header>

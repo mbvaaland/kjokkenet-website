@@ -8,7 +8,7 @@ export default function Header() {
       <div className="container mx-auto flex justify-between items-center">
         <Link href="/">
           <Image
-            src="/kjokkenet_logo2.png"
+            src="/kjokkenet_logo.png"
             alt="Kjøkkenet Cafe & Delikatesse"
             width={250}
             height={250}

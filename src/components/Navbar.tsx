@@ -1,17 +1,18 @@
-import Link from 'next/link';
-
 export default function Navbar() {
   return (
-    <nav>
-      <ul className="flex space-x-4">
+    <nav className="w-full bg-gray-100 py-2">
+      <ul className="flex justify-center space-x-8">
         <li>
-          <Link href="/menu">Meny</Link>
+          <a href="#home">heim</a>
         </li>
         <li>
-          <Link href="/hours">Åpningstider</Link>
+          <a href="#menu">meny</a>
         </li>
         <li>
-          <Link href="/contact">Kontakt oss</Link>
+          <a href="#opening-hours">åpningstider</a>
+        </li>
+        <li>
+          <a href="#contact">kontakt oss</a>
         </li>
       </ul>
     </nav>

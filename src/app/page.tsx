@@ -1,10 +1,14 @@
+// src/app/page.tsx
 export default function Home() {
   return (
-    <div className="container mx-auto p-4">
-      <section className="text-center my-40">
-        <h2 className="text-4xl font-bold mb-4">Velkommen til Kjøkkenet Kafe & Delikatesse</h2>
-      </section>
-      {/* Other sections can go here */}
-    </div>
+    <section className="relative h-screen bg-[url('/homepage2.png')] bg-cover bg-center">
+
+      {/* Container for the welcome text */}
+      <div className="relative z-10 flex items-center justify-center h-full">
+        <h1 className="text-4xl font-bold text-white text-center">
+          Velkommen til Kjøkkenet Kafe & Delikatesse
+        </h1>
+      </div>
+    </section>
   );
 }

@@ -101,7 +101,7 @@ export default function Home() {
             <p className="text-sm leading-relaxed text-white mb-4">
               Telefon: +47 51 48 20 08<br />
               Email: linn@kjokkenet-bryne.no<br />
-              Adresse: Storgata 44, 4340, Bryne
+              Adresse: Storgata 44, 4340 Bryne
             </p>
             {/* Social Icons */}
             <div className="flex items-center justify-center space-x-6 mt-6">

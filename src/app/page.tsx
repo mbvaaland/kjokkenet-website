@@ -69,16 +69,37 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Contact Section */}
-      <section
-        id="contact"
-        className="min-h-screen flex items-center justify-center bg-[#A3B18A]"
-      >
-        <div className="container mx-auto p-4">
-          <h2 className="text-3xl font-bold mb-4">Kontakt oss</h2>
-          {/* Contact content goes here */}
+ {/* Contact Section */}
+  <section
+    id="contact"
+    className="min-h-screen flex bg-[#A3B18A]"
+  >
+    <div className="w-full flex flex-col md:flex-row">
+      {/* Left Column: Photo covering full page vertically */}
+      <div className="w-full md:w-1/2 h-screen">
+       <img src="/kjokkenet_20.webp" alt="Kontakt oss photo" className="w-full h-full object-cover"/>
+      </div>
+
+      {/* Right Column: Text Box */}
+      <div className="w-full md:w-1/2 h-screen flex items-center justify-center p-8">
+        <div className="text-center">
+          <h2 className="text-4xl font-bold mb-6">Kontakt oss</h2>
+          <p className="text-lg mb-4">
+            Du kan kontakte oss for spørsmål, bestillinger eller annen informasjon.<br />
+            Planlegg eit uforgløymeleg selskap hos oss!<br />
+            Vi opnar dørene for lukka selskap utanom ordinær opningstid, enten det er ei feiring, eit møte eller ein spesiell anledning.<br />
+            Ta kontakt med oss for meir informasjon.<br />
+            Hilsen Linn & resten av gjengen på Kjøkkenet.
+          </p>
+          <p className="mb-4">
+            Telefon: +47 51 48 20 08<br />
+            Email: linn@kjokkenet-bryne.no<br />
+            Adresse: Storgata 44, 4340, Bryne
+          </p>
         </div>
-      </section>
+      </div>
+    </div>
+  </section>
     </div>
   );
 }

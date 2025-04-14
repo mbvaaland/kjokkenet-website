@@ -20,7 +20,7 @@ export default function Header() {
       </div>
 
       {/* Navbar Row */}
-      <nav className="w-full bg-orange-200 py-2">
+      <nav className="w-full bg-[#A3B18A] py-2">
         <div className="container mx-auto">
           <ul className="flex justify-center space-x-8">
             <li>

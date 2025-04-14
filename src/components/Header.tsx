@@ -24,9 +24,6 @@ export default function Header() {
         <div className="container mx-auto">
           <ul className="flex justify-center space-x-8">
             <li>
-              <a href="#home" className="hover:text-gray-600">heim</a>
-            </li>
-            <li>
               <a href="#menu" className="hover:text-gray-600">meny</a>
             </li>
             <li>

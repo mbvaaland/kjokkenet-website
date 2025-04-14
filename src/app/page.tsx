@@ -1,3 +1,5 @@
+import { FaFacebook, FaInstagram } from 'react-icons/fa';
+
 export default function Home() {
   // Opening hours data
   const openingHours = [
@@ -69,37 +71,61 @@ export default function Home() {
         </div>
       </section>
 
- {/* Contact Section */}
-  <section
-    id="contact"
-    className="min-h-screen flex bg-[#A3B18A]"
-  >
-    <div className="w-full flex flex-col md:flex-row">
-      {/* Left Column: Photo covering full page vertically */}
-      <div className="w-full md:w-1/2 h-screen">
-       <img src="/kjokkenet_20.webp" alt="Kontakt oss photo" className="w-full h-full object-cover"/>
-      </div>
+      {/* Contact Section */}
+      <section
+        id="contact"
+        className="min-h-screen flex bg-[#A3B18A]"
+      >
+        <div className="w-full flex flex-col md:flex-row">
+          {/* Left Column: Photo covering full page vertically */}
+          <div className="w-full md:w-1/2 h-screen">
+            <img src="/kjokkenet_20.webp" alt="Kontakt oss photo" className="w-full h-full object-cover"/>
+          </div>
 
-      {/* Right Column: Text Box */}
-      <div className="w-full md:w-1/2 h-screen flex items-center justify-center p-8">
-        <div className="text-center">
-          <h2 className="text-4xl font-bold mb-6">Kontakt oss</h2>
-          <p className="text-lg mb-4">
-            Du kan kontakte oss for spørsmål, bestillinger eller annen informasjon.<br />
-            Planlegg eit uforgløymeleg selskap hos oss!<br />
-            Vi opnar dørene for lukka selskap utanom ordinær opningstid, enten det er ei feiring, eit møte eller ein spesiell anledning.<br />
-            Ta kontakt med oss for meir informasjon.<br />
-            Hilsen Linn & resten av gjengen på Kjøkkenet.
-          </p>
-          <p className="mb-4">
-            Telefon: +47 51 48 20 08<br />
-            Email: linn@kjokkenet-bryne.no<br />
-            Adresse: Storgata 44, 4340, Bryne
-          </p>
+          {/* Right Column: Text Box */}
+          <div className="w-full md:w-1/2 h-screen flex items-center justify-center p-8">
+            <div className="text-center">
+              <h2 className="text-4xl text-white font-bold mb-2">Kontakt oss</h2>
+              {/* Thin white line under heading */}
+              <hr className="mx-auto w-60 border-t border-white mb-6" />
+
+              <p className="leading-relaxed text-white mb-4">
+                Du kan kontakte oss for spørsmål, bestillinger eller annen informasjon.<br />
+                <br />
+                Planlegg eit uforgløymeleg selskap hos oss!<br />
+                Vi opnar dørene for lukka selskap utanom ordinær opningstid, enten det er ei feiring, eit møte eller ein spesiell anledning.<br />
+                Ta kontakt med oss for meir informasjon.<br />
+                <br />
+                Hilsen Linn & resten av gjengen på Kjøkkenet.
+              </p>
+            <p className="text-sm leading-relaxed text-white mb-4">
+              Telefon: +47 51 48 20 08<br />
+              Email: linn@kjokkenet-bryne.no<br />
+              Adresse: Storgata 44, 4340, Bryne
+            </p>
+            {/* Social Icons */}
+            <div className="flex items-center justify-center space-x-6 mt-6">
+              <a
+                href="https://www.facebook.com/KjokkenetBryne/"  /* Replace with your Facebook URL */
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-4xl text-black hover:text-blue-700"
+              >
+                <FaFacebook />
+              </a>
+              <a
+                href="https://www.instagram.com/kjokkenetcafeogdelikatesse/"  /* Replace with your Instagram URL */
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-4xl text-black hover:text-pink-600"
+              >
+                <FaInstagram />
+              </a>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+      </section>
     </div>
   );
 }

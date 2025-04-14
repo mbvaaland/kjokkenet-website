@@ -47,7 +47,7 @@ export default function Home() {
           <div className="bg-[#E8DCC3] p-15 w-[95%] mx-auto rounded-lg shadow-md">
             <div className="flex flex-col md:flex-row items-center justify-center space-y-4 md:space-y-0 md:space-x-10">
               {/* Orange Opening Hours Box on Left */}
-              <div className="bg-orange-600 text-white rounded-lg p-30 flex flex-col justify-start w-full md:w-1/2 max-w-md h-160">
+              <div className="bg-[#DD571C] text-white rounded-lg p-30 flex flex-col justify-start w-full md:w-1/2 max-w-md h-160">
                 <h2 className="text-4xl font-bold text-center mb-10">Åpningstider</h2>
                 <ul className="space-y-2">
                   {openingHours.map((item, index) => (

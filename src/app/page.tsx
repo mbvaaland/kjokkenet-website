@@ -90,7 +90,7 @@ export default function Home() {
               <hr className="mx-auto w-60 border-t border-white mb-6" />
 
               <p className="leading-relaxed text-white mb-4">
-                Du kan kontakte oss for spørsmål, bestillinger eller annen informasjon.<br />
+                Du kan kontakte oss for spørsmål, bestillingar eller anna informasjon.<br />
                 <br />
                 Planlegg eit uforgløymeleg selskap hos oss!<br />
                 Vi opnar dørene for lukka selskap utanom ordinær opningstid, enten det er ei feiring, eit møte eller ein spesiell anledning.<br />

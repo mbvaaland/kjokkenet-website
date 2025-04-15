@@ -106,7 +106,7 @@ export default function Home() {
                 <br />
                 Planlegg eit uforgløymeleg selskap hos oss!<br />
                 Vi opnar dørene for lukka selskap utanom ordinær opningstid, enten det er ei feiring, eit møte eller ein spesiell anledning.<br />
-                Ta kontakt med oss for meir informasjon.<br />
+                Vi ser fram til å høyre frå deg.<br />
                 <br />
                 Hilsen Linn & resten av gjengen på Kjøkkenet.
               </p>

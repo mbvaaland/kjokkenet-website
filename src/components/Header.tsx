@@ -9,10 +9,10 @@ export default function Header() {
         <div className="flex justify-center py-4">
           <Link href="/">
             <Image
-              src="/kjokkenet_logo.png"
+              src="/original_logo2.png"
               alt="Kjøkkenet Cafe & Delikatesse"
-              width={250}
-              height={250}
+              width={300}
+              height={300}
               className="object-contain"
             />
           </Link>
@@ -20,7 +20,7 @@ export default function Header() {
       </div>
 
       {/* Navbar Row */}
-      <nav className="w-full bg-[#A3B18A] py-2">
+      <nav className="w-full bg-[#A4BE5C] py-2">
         <div className="container mx-auto">
           <ul className="flex justify-center space-x-8">
             <li>

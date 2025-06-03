@@ -17,7 +17,7 @@ export default function Home() {
       {/* Home Section */}
       <section
         id="home"
-        className="pt-16 min-h-screen flex items-center justify-center bg-cover bg-center bg-[url('/homepage2.png')]"
+        className="pt-16 min-h-screen flex items-center justify-center bg-cover bg-center bg-[url('/kjokkenet_12.jpg')]"
       >
         <div className="container mx-auto p-4 text-center transform -translate-y-40">
           <h2 className="text-white text-4xl font-bold">
@@ -29,7 +29,7 @@ export default function Home() {
       {/* Menu Section */}
       <section
         id="menu"
-        className="min-h-screen flex items-center justify-center bg-[#A3B18A]"
+        className="min-h-screen flex items-center justify-center bg-[#A4BE5C]"
       >
         <div className="container mx-auto p-4">
           <h2 className="text-3xl font-bold mb-4">Meny</h2>
@@ -40,7 +40,7 @@ export default function Home() {
       {/* Opening Hours Section */}
       <section
         id="opening-hours"
-        className="min-h-screen flex items-center justify-center bg-[#A3B18A]"
+        className="min-h-screen flex items-center justify-center bg-[#A4BE5C]"
       >
         <div className="container mx-auto px-4 py-8">
           {/* Beige card container */}
@@ -50,7 +50,7 @@ export default function Home() {
             <div className="flex flex-col md:flex-row gap-6 items-stretch md:h-[40rem]">
         
               {/* Orange Box */}
-              <div className="bg-[#DD5710] text-white rounded-lg w-full md:w-1/2 flex items-center justify-center">
+              <div className="bg-[#F7981D] text-white rounded-lg w-full md:w-1/2 flex items-center justify-center">
                 {/* Narrow column so text is centered */}
                 <div className="max-w-sm text-center p-6 sm:p-8">
                   <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-8">Åpningstider</h2>
@@ -86,7 +86,7 @@ export default function Home() {
       {/* Contact Section */}
       <section
         id="contact"
-        className="min-h-screen flex bg-[#A3B18A]"
+        className="min-h-screen flex bg-[#A4BE5C]"
       >
         <div className="w-full flex flex-col md:flex-row">
           {/* Left Column: Photo covering full page vertically */}

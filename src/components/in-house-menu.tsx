@@ -1,4 +1,7 @@
-import { Coffee, Wine, Utensils, Info } from "lucide-react"
+// src/components/in-house-menu.tsx
+"use client";
+
+import { Utensils, Coffee, Wine, Info } from "lucide-react";
 
 export function InHouseMenu() {
   const menuSections = [
@@ -46,6 +49,11 @@ export function InHouseMenu() {
           description: "Krema tomatsuppe med karri-marinert kylling",
           price: 220,
         },
+        {
+          name: "Ukas rett",
+          description: "Spør oss gjerne om ukas rett!",
+          // no `price` here
+        },
       ],
     },
     {
@@ -91,7 +99,7 @@ export function InHouseMenu() {
         { name: "Kakao", price: 66 },
       ],
     },
-  ]
+  ];
 
   return (
     <div className="space-y-12">
@@ -114,13 +122,23 @@ export function InHouseMenu() {
                 <div className="flex justify-between items-start gap-4">
                   <div className="flex-1">
                     <h4 className="font-bold text-[#4a5d4a] mb-1">{item.name}</h4>
-                    {item.description && <p className="text-sm text-gray-600 leading-relaxed">{item.description}</p>}
+                    {item.description && (
+                      <p className="text-sm text-gray-600 leading-relaxed">
+                        {item.description}
+                      </p>
+                    )}
                   </div>
-                  <div className="text-right flex-shrink-0">
-                    <span className="font-medium text-[#4a5d4a]">Kr. {item.price},-</span>
-                  </div>
+                  {item.price !== undefined && (
+                    <div className="text-right flex-shrink-0">
+                      <span className="font-medium text-[#4a5d4a]">
+                        Kr. {item.price},-
+                      </span>
+                    </div>
+                  )}
                 </div>
-                {index < section.items.length - 1 && <div className="mt-4 border-b border-green-200/50"></div>}
+                {index < section.items.length - 1 && (
+                  <div className="mt-4 border-b border-green-200/50"></div>
+                )}
               </div>
             ))}
           </div>
@@ -131,10 +149,7 @@ export function InHouseMenu() {
         <div className="bg-white/60 backdrop-blur-sm p-6 rounded-lg border border-green-200">
           <div className="flex items-center gap-2 mb-3">
             <Info className="h-4 w-4 text-[#4a5d4a]" />
-            <h3 className="font-medium text-[#4a5d4a]">Ukas rett</h3>
           </div>
-          <p className="text-[#4a5d4a] mb-4">Spør oss gjerne om ukas rett !</p>
-
           <div className="text-sm text-gray-600 space-y-1 border-t border-green-200/50 pt-4">
             <p>• Glutenfritt brød kan fås til 25kr ekstra</p>
             <p>• Soya, havre, krem m.m. 7kr ekstra</p>
@@ -144,5 +159,5 @@ export function InHouseMenu() {
         </div>
       </div>
     </div>
-  )
+  );
 }

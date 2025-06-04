@@ -1,5 +1,8 @@
-import Link from 'next/link';
-import Image from 'next/image';
+// src/components/Header.tsx
+"use client";
+
+import Link from "next/link";
+import Image from "next/image";
 
 export default function Header() {
   return (
@@ -24,13 +27,19 @@ export default function Header() {
         <div className="container mx-auto">
           <ul className="flex justify-center space-x-8">
             <li>
-              <a href="#menu" className="hover:text-gray-600">meny</a>
+              <a href="/#menu" className="hover:text-gray-600">
+                meny
+              </a>
             </li>
             <li>
-              <a href="#opening-hours" className="hover:text-gray-600">åpningstider</a>
+              <a href="/#opening-hours" className="hover:text-gray-600">
+                åpningstider
+              </a>
             </li>
             <li>
-              <a href="#contact" className="hover:text-gray-600">kontakt oss</a>
+              <a href="/#contact" className="hover:text-gray-600">
+                kontakt oss
+              </a>
             </li>
           </ul>
         </div>

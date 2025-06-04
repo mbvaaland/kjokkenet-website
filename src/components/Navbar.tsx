@@ -1,17 +1,45 @@
-export default function Navbar() {
+// src/components/Navbar.tsx
+"use client";
+
+import Link from "next/link";
+
+export function Navbar() {
   return (
-    <nav className="w-full bg-gray-100 py-2">
-      <ul className="flex justify-center space-x-8">
-        <li>
-          <a href="#menu">meny</a>
-        </li>
-        <li>
-          <a href="#opening-hours">åpningstider</a>
-        </li>
-        <li>
-          <a href="#contact">kontakt oss</a>
-        </li>
-      </ul>
+    <nav className="bg-white shadow-md">
+      <div className="container mx-auto flex items-center justify-between p-4">
+        {/* Logo / Home */}
+        <Link href="/" className="flex items-center space-x-2">
+          <img
+            src="/kjokkenet_logo.png"
+            alt="Kjøkkenet logo"
+            className="h-8 w-8"
+          />
+          <span className="text-xl font-bold">Kjøkkenet</span>
+        </Link>
+
+        {/* Nav links */}
+        <div className="space-x-6">
+          <Link href="/" className="text-gray-700 hover:text-green-700">
+            Hjem
+          </Link>
+
+          <Link href="/menu" className="text-gray-700 hover:text-green-700">
+            Meny
+          </Link>
+          <Link
+            href="/#opening-hours"
+            className="text-gray-700 hover:text-green-700"
+          >
+            Åpningstider
+          </Link>
+          <Link
+            href="/#contact"
+            className="text-gray-700 hover:text-green-700"
+          >
+            Kontakt oss
+          </Link>
+        </div>
+      </div>
     </nav>
   );
 }

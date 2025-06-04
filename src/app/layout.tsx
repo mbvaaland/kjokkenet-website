@@ -1,19 +1,18 @@
-import '../../styles/globals.css';
-import Header from '../components/Header';
+// src/app/layout.tsx
+import "../../styles/globals.css";
+import Header from "@/components/Header";
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export const metadata = {
+  title: "Kjøkkenet Kafe & Delikatesse",
+  description: "Velkommen til Kjøkkenet Kafe & Delikatesse",
+};
+
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en">
-      <head>
-        <title>Kjøkkenet Cafe & Delikatesse</title>
-      </head>
-      <body className="min-h-screen flex flex-col">
+    <html lang="no">
+      <body className="bg-white text-gray-800">
         <Header />
-        <main className="flex-grow">{children}</main>
+        <main>{children}</main>
       </body>
     </html>
   );

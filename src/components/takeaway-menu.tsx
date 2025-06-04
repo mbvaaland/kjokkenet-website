@@ -107,8 +107,8 @@ export function TakeawayMenu() {
       <div className="bg-white/60 backdrop-blur-sm p-6 rounded-lg border border-orange-200 max-w-2xl mx-auto">
         <h3 className="font-medium mb-3 text-[#b45309]">Bestillingsinformasjon</h3>
         <div className="space-y-2 text-sm text-gray-600">
-          <p>Ring oss for å bestille dine tapas. Minimum 2 personer per bestilling.</p>
-          <p className="font-medium text-[#b45309] mt-3">Telefon: (123) 456-7890</p>
+          <p>Me skreddersyr dine tapasretter. Velg blant det som fristar frå vårt utval og komponer din eigen tapasmeny. Ring oss eller kom innom for å bestilla.</p>
+          <p className="font-medium text-[#b45309] mt-3">Telefon: 51 48 20 08</p>
         </div>
       </div>
     </div>

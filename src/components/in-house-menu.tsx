@@ -79,7 +79,7 @@ export function InHouseMenu() {
       items: [
         { name: "Americano", price: 45 },
         { name: "Espresso", price: 45 },
-        { name: "Capucciono", price: 56 },
+        { name: "Cappuccino", price: 56 },
         { name: "Latte", price: 61 },
         { name: "Islatte", price: 59 },
         { name: "Caffe mocca", price: 66 },
@@ -97,7 +97,7 @@ export function InHouseMenu() {
     <div className="space-y-12">
       <div className="text-center mb-8">
         <div className="bg-white/60 backdrop-blur-sm p-4 rounded-lg border border-green-200 max-w-md mx-auto">
-          <p className="text-sm font-medium text-[#4a5d4a]">Focacciabrød og pesto følger med på alle retter</p>
+          <p className="text-sm font-medium text-[#4a5d4a]">Focacciabrød og pesto følger med alle retter</p>
         </div>
       </div>
 
@@ -137,7 +137,8 @@ export function InHouseMenu() {
 
           <div className="text-sm text-gray-600 space-y-1 border-t border-green-200/50 pt-4">
             <p>• Glutenfritt brød kan fås til 25kr ekstra</p>
-            <p>• Soya, havre, krem m.m. 7kr ekstra (kaffe)</p>
+            <p>• Soya, havre, krem m.m. 7kr ekstra</p>
+            <p>• Vi har også div. smakstilsetninger</p>
             <p>• Det kan være variasjon av grønnsaker alt etter tilgang på råvarer</p>
           </div>
         </div>

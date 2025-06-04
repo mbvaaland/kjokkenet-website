@@ -30,19 +30,44 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Menu Section */}
-      <section
+       {/* Menu Section */}
+       <section
         id="menu"
-        className="min-h-screen flex items-center justify-center bg-[#A4BE5C]"
+        className="min-h-screen flex flex-col md:flex-row bg-[#A4BE5C]"
       >
-        <div className="container mx-auto p-4 text-center">
-          <h2 className="text-3xl font-bold mb-4">Meny</h2>
-          <Link
-            href="/menu"
-            className="inline-block mt-4 bg-green-700 text-white px-6 py-3 rounded-lg hover:bg-green-800 transition"
-          >
-            Se full meny
-          </Link>
+        <div className="w-full md:w-1/2 h-64 md:h-screen flex items-center justify-center p-8">
+          <div className="text-center w-full max-w-md">
+            <h2 className="text-4xl text-white font-bold mb-2">Meny</h2>
+            <hr className="mx-auto w-60 border-t border-white mb-6" />
+
+            <p className="leading-relaxed text-white mb-4">
+              Me lagar mat med kjærleik og førsteklasses råvarer. For oss er kos og hyggeleg stemning ein viktig del av matgleda.
+            </p>
+
+            <div className="flex items-center justify-center space-x-6 mt-6">
+              <Link
+                href="/menu"
+                className="
+                  bg-green-700 
+                  text-white 
+                  px-6 py-3 
+                  rounded-lg 
+                  hover:bg-green-800 
+                  transition
+                "
+              >
+                Se full meny
+              </Link>
+            </div>
+          </div>
+        </div>
+
+        <div className="w-full md:w-1/2 h-64 md:h-screen">
+          <img
+            src="/kjokkenet_5.jpg"
+            alt="Meny photo"
+            className="w-full h-full object-cover"
+          />
         </div>
       </section>
 

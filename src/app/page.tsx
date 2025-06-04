@@ -42,6 +42,10 @@ export default function Home() {
 
             <p className="leading-relaxed text-white mb-4">
               Me lagar mat med kjærleik og førsteklasses råvarer. For oss er kos og hyggeleg stemning ein viktig del av matgleda.
+              <br />
+              <br />
+              Ønsker du en rask og smakfull lunsj? Me har alltid ferske lunsjbokser klare!
+              <br />
             </p>
 
             <div className="flex items-center justify-center space-x-6 mt-6">
@@ -62,7 +66,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="w-full md:w-1/2 h-64 md:h-screen">
+        <div className="w-full md:w-1/2 h-64 md:h-screen">Konta
           <img
             src="/kjokkenet_5.jpg"
             alt="Meny photo"

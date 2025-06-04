@@ -1,13 +1,9 @@
-"use client";
-
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Flame, Snowflake } from "lucide-react"
 
 export function TakeawayMenu() {
   const tapasMenus = [
     {
       name: "Lunsjtapas",
-      nameEn: "Lunch Tapas",
       price: 339,
       items: [
         "Pastasalat med kylling",
@@ -21,7 +17,6 @@ export function TakeawayMenu() {
     },
     {
       name: "Kveldstapas",
-      nameEn: "Evening Tapas",
       price: 495,
       hotItems: [
         "Jærpoteter",
@@ -44,85 +39,76 @@ export function TakeawayMenu() {
   ]
 
   return (
-    <div className="space-y-8">
-      <div className="text-center mb-8">
-        <h2 className="text-2xl font-bold mb-2">Hent Heim Tapasmeny</h2>
-        <p className="text-muted-foreground">
-        Me skreddersyr dine tapasretter. Velg blant det som fristar
-        frå vårt utval og komponer din eigen tapasmeny.
-        </p>
-      </div>
-
-      <div className="grid gap-6">
+    <div className="space-y-12">
+      <div className="space-y-12 max-w-2xl mx-auto">
         {tapasMenus.map((menu) => (
-          <Card key={menu.name} className="overflow-hidden">
-            <CardHeader className="bg-gradient-to-r from-orange-50 to-red-50 border-b">
+          <div
+            key={menu.name}
+            className="bg-white/60 backdrop-blur-sm rounded-lg border border-orange-200 overflow-hidden"
+          >
+            <div className="bg-gradient-to-r from-orange-100 to-orange-50 p-6 border-b border-orange-200">
               <div className="flex justify-between items-center">
-                <div>
-                  <CardTitle className="text-2xl text-orange-600">{menu.name}</CardTitle>
-                  <CardDescription className="text-lg font-medium text-gray-600">{menu.nameEn}</CardDescription>
-                </div>
+                <h3 className="text-2xl font-bold text-[#b45309]">{menu.name}</h3>
                 <div className="text-right">
-                  <div className="text-2xl font-bold">{menu.price},-</div>
-                  <div className="text-sm text-muted-foreground">per person</div>
+                  <div className="text-2xl font-bold text-[#b45309]">{menu.price},-</div>
+                  <div className="text-sm text-gray-600">per person</div>
                 </div>
               </div>
-            </CardHeader>
+            </div>
 
-            <CardContent className="p-6">
+            <div className="p-6">
               {menu.name === "Lunsjtapas" ? (
                 <div className="space-y-3">
                   {menu.items?.map((item, index) => (
-                    <div key={index} className="flex items-center space-x-2">
-                      <div className="w-2 h-2 bg-orange-400 rounded-full flex-shrink-0"></div>
-                      <span className="text-gray-700">{item}</span>
+                    <div key={index} className="flex items-center space-x-3">
+                      <div className="w-1.5 h-1.5 bg-[#b45309] rounded-full flex-shrink-0"></div>
+                      <span className="text-gray-700 font-medium">{item}</span>
                     </div>
                   ))}
                 </div>
               ) : (
-                <div className="grid md:grid-cols-2 gap-6">
+                <div className="grid md:grid-cols-2 gap-8">
                   <div>
-                    <div className="flex items-center gap-2 mb-3">
+                    <div className="flex items-center gap-2 mb-4">
                       <Flame className="h-4 w-4 text-red-500" />
                       <h4 className="font-semibold text-red-600">Varmt:</h4>
                     </div>
-                    <div className="space-y-2">
+                    <div className="space-y-3">
                       {menu.hotItems?.map((item, index) => (
-                        <div key={index} className="flex items-center space-x-2">
-                          <div className="w-2 h-2 bg-red-400 rounded-full flex-shrink-0"></div>
-                          <span className="text-gray-700">{item}</span>
+                        <div key={index} className="flex items-center space-x-3">
+                          <div className="w-1.5 h-1.5 bg-red-400 rounded-full flex-shrink-0"></div>
+                          <span className="text-gray-700 font-medium">{item}</span>
                         </div>
                       ))}
                     </div>
                   </div>
 
                   <div>
-                    <div className="flex items-center gap-2 mb-3">
+                    <div className="flex items-center gap-2 mb-4">
                       <Snowflake className="h-4 w-4 text-blue-500" />
                       <h4 className="font-semibold text-blue-600">Kaldt:</h4>
                     </div>
-                    <div className="space-y-2">
+                    <div className="space-y-3">
                       {menu.coldItems?.map((item, index) => (
-                        <div key={index} className="flex items-center space-x-2">
-                          <div className="w-2 h-2 bg-blue-400 rounded-full flex-shrink-0"></div>
-                          <span className="text-gray-700">{item}</span>
+                        <div key={index} className="flex items-center space-x-3">
+                          <div className="w-1.5 h-1.5 bg-blue-400 rounded-full flex-shrink-0"></div>
+                          <span className="text-gray-700 font-medium">{item}</span>
                         </div>
                       ))}
                     </div>
                   </div>
                 </div>
               )}
-            </CardContent>
-          </Card>
+            </div>
+          </div>
         ))}
       </div>
 
-      <div className="bg-muted p-6 rounded-lg">
-        <h3 className="font-medium mb-3">Bestillingsinformasjon / Ordering Information</h3>
-        <div className="space-y-2 text-sm text-muted-foreground">
-          <p>Ring oss eller kom innom for å bestilla.</p>
-          <p>Call us or visit our cafe to order your tapas.</p>
-          <p className="font-medium text-foreground mt-3">Telefon: 51 48 20 08</p>
+      <div className="bg-white/60 backdrop-blur-sm p-6 rounded-lg border border-orange-200 max-w-2xl mx-auto">
+        <h3 className="font-medium mb-3 text-[#b45309]">Bestillingsinformasjon</h3>
+        <div className="space-y-2 text-sm text-gray-600">
+          <p>Ring oss for å bestille dine tapas. Minimum 2 personer per bestilling.</p>
+          <p className="font-medium text-[#b45309] mt-3">Telefon: (123) 456-7890</p>
         </div>
       </div>
     </div>

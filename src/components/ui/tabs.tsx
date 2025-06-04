@@ -5,14 +5,28 @@ import * as TabsPrimitives from "@radix-ui/react-tabs";
 import React from "react";
 
 interface TabsProps {
-  defaultValue: string;
+  /** Either controlled (value & onValueChange) or uncontrolled (defaultValue) */
+  defaultValue?: string;
+  value?: string;
+  onValueChange?: (value: string) => void;
   className?: string;
   children: React.ReactNode;
 }
 
-export function Tabs({ defaultValue, className, children }: TabsProps) {
+export function Tabs({
+  defaultValue,
+  value,
+  onValueChange,
+  className,
+  children,
+}: TabsProps) {
   return (
-    <TabsPrimitives.Root defaultValue={defaultValue} className={className}>
+    <TabsPrimitives.Root
+      defaultValue={defaultValue}
+      value={value}
+      onValueChange={onValueChange}
+      className={className}
+    >
       {children}
     </TabsPrimitives.Root>
   );

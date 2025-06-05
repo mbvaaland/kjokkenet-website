@@ -13,7 +13,7 @@ export default function MenuPage() {
       className={`min-h-screen transition-colors duration-500 ${
         activeTab === "in-house"
           ? "bg-gradient-to-br from-[#f0f4e8] via-[#e8f2dc] to-[#dce8d0]"
-          : "bg-gradient-to-br from-[#fed7aa] via-[#fed7aa] to-[#fed7aa]"
+          : "bg-gradient-to-br from-[#f0f4e8] via-[#e8f2dc] to-[#dce8d0]"
       }`}
     >
       <div className="container mx-auto py-4 px-4 md:px-6">

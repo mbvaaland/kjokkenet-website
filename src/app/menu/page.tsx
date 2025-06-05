@@ -13,20 +13,12 @@ export default function MenuPage() {
       className={`min-h-screen transition-colors duration-500 ${
         activeTab === "in-house"
           ? "bg-gradient-to-br from-[#f0f4e8] via-[#e8f2dc] to-[#dce8d0]"
-          : "bg-gradient-to-br from-[#fed7aa] via-[#fed7aa] to-[#fdba74]"
+          : "bg-gradient-to-br from-[#fed7aa] via-[#fed7aa] to-[#fed7aa]"
       }`}
     >
-      <div className="container mx-auto py-10 px-4 md:px-6">
-        <div className="flex flex-col items-center mb-10 text-center">
-          <h1
-            className={`text-3xl md:text-4xl font-bold tracking-tight mb-8 transition-colors duration-300 ${
-              activeTab === "in-house" ? "text-[#4a5d4a]" : "text-[#b45309]"
-            }`}
-          >
-            Våre Menyer
-          </h1>
+      <div className="container mx-auto py-4 px-4 md:px-6">
+         
         </div>
-
         <Tabs defaultValue="in-house" className="w-full max-w-4xl mx-auto" onValueChange={setActiveTab}>
           <TabsList className="grid w-full grid-cols-2 mb-8 h-14 p-1 bg-white/90 backdrop-blur-sm shadow-lg border-2 border-gray-200 rounded-xl">
             <TabsTrigger
@@ -50,6 +42,6 @@ export default function MenuPage() {
           </TabsContent>
         </Tabs>
       </div>
-    </div>
+    
   )
 }

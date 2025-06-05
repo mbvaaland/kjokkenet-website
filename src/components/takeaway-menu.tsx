@@ -39,7 +39,7 @@ export function TakeawayMenu() {
   ]
 
   return (
-    <div className="space-y-12">
+    <div className="px-4 space-y-12 pb-12">
       <div className="space-y-12 max-w-2xl mx-auto">
         {tapasMenus.map((menu) => (
           <div
@@ -70,13 +70,13 @@ export function TakeawayMenu() {
                 <div className="grid md:grid-cols-2 gap-8">
                   <div>
                     <div className="flex items-center gap-2 mb-4">
-                      <Flame className="h-4 w-4 text-red-500" />
-                      <h4 className="font-semibold text-red-600">Varmt:</h4>
+                      <Flame className="h-4 w-4 text-[#b45309]" />
+                      <h4 className="font-semibold text-[#b45309]">Varmt:</h4>
                     </div>
                     <div className="space-y-3">
                       {menu.hotItems?.map((item, index) => (
                         <div key={index} className="flex items-center space-x-3">
-                          <div className="w-1.5 h-1.5 bg-red-400 rounded-full flex-shrink-0"></div>
+                          <div className="w-1.5 h-1.5 bg-[#b45309] rounded-full flex-shrink-0"></div>
                           <span className="text-gray-700 font-medium">{item}</span>
                         </div>
                       ))}
@@ -85,13 +85,13 @@ export function TakeawayMenu() {
 
                   <div>
                     <div className="flex items-center gap-2 mb-4">
-                      <Snowflake className="h-4 w-4 text-blue-500" />
-                      <h4 className="font-semibold text-blue-600">Kaldt:</h4>
+                      <Snowflake className="h-4 w-4 text-[#b45309]" />
+                      <h4 className="font-semibold text-[#b45309]">Kaldt:</h4>
                     </div>
                     <div className="space-y-3">
                       {menu.coldItems?.map((item, index) => (
                         <div key={index} className="flex items-center space-x-3">
-                          <div className="w-1.5 h-1.5 bg-blue-400 rounded-full flex-shrink-0"></div>
+                          <div className="w-1.5 h-1.5 bg-[#b45309] rounded-full flex-shrink-0"></div>
                           <span className="text-gray-700 font-medium">{item}</span>
                         </div>
                       ))}

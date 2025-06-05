@@ -102,7 +102,7 @@ export function InHouseMenu() {
   ];
 
   return (
-    <div className="space-y-12">
+    <div className="px-4 space-y-12 pb-12">
       <div className="text-center mb-8">
         <div className="bg-white/60 backdrop-blur-sm p-4 rounded-lg border border-green-200 max-w-md mx-auto">
           <p className="text-sm font-medium text-[#4a5d4a]">Focacciabrød og pesto følger med alle retter</p>
@@ -148,7 +148,7 @@ export function InHouseMenu() {
       <div className="max-w-2xl mx-auto">
         <div className="bg-white/60 backdrop-blur-sm p-6 rounded-lg border border-green-200">
           <div className="flex items-center gap-2 mb-3">
-            <Info className="h-4 w-4 text-[#4a5d4a]" />
+            <Info className="h-6 w-6 text-[#4a5d4a]" />
           </div>
           <div className="text-sm text-gray-600 space-y-1 border-t border-green-200/50 pt-4">
             <p>• Glutenfritt brød kan fås til 25kr ekstra</p>

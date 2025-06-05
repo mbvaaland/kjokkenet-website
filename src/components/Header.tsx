@@ -23,7 +23,7 @@ export default function Header() {
       </div>
 
       {/* Navbar Row */}
-      <nav className="w-full bg-[#A4BE5C] py-2">
+      <nav className="w-full bg-[#7c9885] py-2">
         <div className="container mx-auto">
           <ul className="flex justify-center space-x-8">
             <li>

@@ -18,24 +18,31 @@ export default function Home() {
 
   return (
     <div className="scroll-smooth">
+
       {/* Home Section */}
+
       <section
         id="home"
         className="pt-16 min-h-screen flex items-center justify-center bg-cover bg-center bg-[url('/kjokkenet_12.jpg')]"
       >
+
+        {/*
         <div className="container mx-auto p-4 text-center transform -translate-y-40">
-          <h2 className="text-white text-4xl font-bold">
+          <h2 className="text-[#4a5d4a] text-4xl font-bold">
             Velkommen til Kjøkkenet Kafe & Delikatesse
           </h2>
         </div>
+        */}
       </section>
 
-       {/* Menu Section */}
-       <section
+      {/* Menu Section */}
+
+      <section
         id="menu"
-        className="min-h-screen flex flex-col md:flex-row bg-[#A4BE5C]"
+        className="min-h-screen flex flex-col md:flex-row bg-[#7c9885]"
       >
-        <div className="w-full md:w-1/2 h-64 md:h-screen flex items-center justify-center p-8">
+        
+        <div className="w-full md:w-1/2 h-auto md:h-screen flex items-center justify-center p-8">
           <div className="text-center w-full max-w-md">
             <h2 className="text-4xl text-white font-bold mb-2">Meny</h2>
             <hr className="mx-auto w-60 border-t border-white mb-6" />
@@ -52,11 +59,11 @@ export default function Home() {
               <Link
                 href="/menu"
                 className="
-                  bg-green-700 
-                  text-white 
-                  px-6 py-3 
-                  rounded-lg 
-                  hover:bg-green-800 
+                  bg-[#d97706]
+                  text-white
+                  px-6 py-3
+                  rounded-lg
+                  hover:bg-[#b45309]
                   transition
                 "
               >
@@ -66,7 +73,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="w-full md:w-1/2 h-64 md:h-screen">Konta
+        <div className="w-full md:w-1/2 h-auto md:h-screen">
           <img
             src="/kjokkenet_5.jpg"
             alt="Meny photo"
@@ -76,16 +83,17 @@ export default function Home() {
       </section>
 
       {/* Opening Hours Section */}
+      
       <section
         id="opening-hours"
-        className="min-h-screen flex items-center justify-center bg-[#A4BE5C]"
+        className="min-h-screen flex items-center justify-center bg-[#7c9885]"
       >
         <div className="container mx-auto px-4 py-8">
           {/* Beige card container */}
           <div className="bg-[#E8DCC3] rounded-lg shadow-md p-6 sm:p-8 md:p-10 w-full max-w-5xl mx-auto">
             <div className="flex flex-col md:flex-row gap-6 items-stretch md:h-[40rem]">
-              {/* Orange Box */}
-              <div className="bg-[#F7981D] text-white rounded-lg w-full md:w-1/2 flex items-center justify-center">
+              {/* Left: Orange “Åpningstider” box */}
+              <div className="bg-[#d97706] text-white rounded-lg w-full md:w-1/2 flex items-center justify-center">
                 <div className="max-w-sm text-center p-6 sm:p-8">
                   <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-8">
                     Åpningstider
@@ -104,7 +112,7 @@ export default function Home() {
                 </div>
               </div>
 
-              {/* Photo */}
+              {/* Right: Photo */}
               <div className="w-full md:w-1/2 flex items-center justify-center">
                 <img
                   src="/kjokkenet_7.jpg"
@@ -118,9 +126,10 @@ export default function Home() {
       </section>
 
       {/* Contact Section */}
-      <section id="contact" className="min-h-screen flex bg-[#A4BE5C]">
+      
+      <section id="contact" className="min-h-screen flex bg-[#7c9885]">
         <div className="w-full flex flex-col md:flex-row">
-          {/* Left Column: Photo */}
+          {/* Left: Kontakt oss photo */}
           <div className="w-full md:w-1/2 h-screen">
             <img
               src="/kjokkenet_20.webp"
@@ -129,7 +138,7 @@ export default function Home() {
             />
           </div>
 
-          {/* Right Column: Text Box */}
+          {/* Right: Kontakt oss text box */}
           <div className="w-full md:w-1/2 h-screen flex items-center justify-center p-8">
             <div className="text-center">
               <h2 className="text-4xl text-white font-bold mb-2">
@@ -145,8 +154,7 @@ export default function Home() {
                 Planlegg eit uforgløymeleg selskap hos oss!
                 <br />
                 Vi opnar dørene for lukka selskap utanom ordinær opningstid,
-                enten det er ei feiring, eit møte eller ein spesiell
-                anledning.
+                enten det er ei feiring, eit møte eller ein spesiell anledning.
                 <br />
                 Vi ser fram til å høyre frå deg.
                 <br />

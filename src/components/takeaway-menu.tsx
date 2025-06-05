@@ -45,7 +45,7 @@ export function TakeawayMenu() {
         {tapasMenus.map((menu) => (
           <div
             key={menu.name}
-            className="bg-white/60 backdrop-blur-sm rounded-lg border border-orange-100 overflow-hidden"
+            className="bg-white/60 backdrop-blur-sm rounded-lg overflow-hidden"
           >
             <div className="bg-orange-100 px-6 py-4 border-b border-orange-100">
               <div className="flex justify-between items-center">
@@ -105,14 +105,12 @@ export function TakeawayMenu() {
         ))}
       </div>
 
-      <div className="bg-white/60 backdrop-blur-sm p-6 rounded-lg border border-orange-100 max-w-2xl mx-auto">
+      <div className="bg-white/60 backdrop-blur-sm p-6 rounded-lg max-w-2xl mx-auto">
         <h3 className="font-medium mb-3 text-[#cc5801]">Bestillingsinformasjon</h3>
         <div className="space-y-2 text-sm text-gray-600">
-          <p>
-            Me skreddersyr dine tapasretter. Velg blant det som fristar frå vårt
-            utval og komponer din eigen tapasmeny. Ring oss eller kom innom for
-            å bestilla.
-          </p>
+          <p> Me skreddersyr dine tapasretter!</p>
+          <p> Velg blant det som fristar frå vårt utval og komponer din eigen tapasmeny.</p>
+          <p> Ring oss eller kom innom for å bestilla.</p>
           <p className="font-medium text-[#cc5801] mt-3">Telefon: 51 48 20 08</p>
         </div>
       </div>

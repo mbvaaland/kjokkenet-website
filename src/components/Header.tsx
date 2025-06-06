@@ -1,6 +1,4 @@
 // src/components/Header.tsx
-"use client";
-
 import Link from "next/link";
 import Image from "next/image";
 
@@ -27,23 +25,17 @@ export default function Header() {
         <div className="container mx-auto">
           <ul className="flex justify-center space-x-8">
             <li>
-              <a href="/#menu" className="hover:text-gray-600">
-                meny
-              </a>
+              <Link href="/#menu" className="hover:text-gray-600">meny</Link>
             </li>
-            <li>
-              <a href="/#opening-hours" className="hover:text-gray-600">
-                åpningstider
-              </a>
-            </li>
-            <li>
-              <a href="/#contact" className="hover:text-gray-600">
-                kontakt oss
-              </a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-    </header>
+          <li>
+            <Link href="/#opening-hours" className="hover:text-gray-600">åpningstider</Link>
+          </li>
+          <li>
+          <Link href="/#contact" className="hover:text-gray-600">kontakt oss</Link>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
   );
 }

@@ -2,6 +2,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";           
 import { FaFacebook, FaInstagram } from "react-icons/fa";
 
 export default function Home() {
@@ -20,29 +21,21 @@ export default function Home() {
     <div className="scroll-smooth">
 
       {/* Home Section */}
-
+      
       <section
         id="home"
         className="pt-16 min-h-screen flex items-center justify-center bg-cover bg-center bg-[url('/kjokkenet_12.jpg')]"
       >
-
-        {/*
-        <div className="container mx-auto p-4 text-center transform -translate-y-40">
-          <h2 className="text-[#4a5d4a] text-4xl font-bold">
-            Velkommen til Kjøkkenet Kafe & Delikatesse
-          </h2>
-        </div>
-        */}
       </section>
 
       {/* Menu Section */}
-
+      
       <section
         id="menu"
         className="min-h-screen flex flex-col md:flex-row bg-[#7c9885]"
       >
-        
-        <div className="w-full md:w-1/2 h-auto md:h-screen flex items-center justify-center p-8">
+        {/* Left half (text + button) */}
+        <div className="w-full md:w-1/2 flex items-center justify-center p-8 h-auto md:h-screen">
           <div className="text-center w-full max-w-md">
             <h2 className="text-4xl text-white font-bold mb-2">Meny</h2>
             <hr className="mx-auto w-60 border-t border-white mb-6" />
@@ -73,23 +66,25 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="w-full md:w-1/2 h-auto md:h-screen">
-          <img
+        {/* Right half (image) */}
+        <div className="w-full md:w-1/2 flex-1 md:h-screen relative">
+          <Image
             src="/kjokkenet_5.jpg"
             alt="Meny photo"
-            className="w-full h-full object-cover"
+            fill                                  
+            className="object-cover"
+            sizes="100vw"
           />
         </div>
       </section>
 
       {/* Opening Hours Section */}
-      
+
       <section
         id="opening-hours"
         className="min-h-screen flex items-center justify-center bg-[#7c9885]"
       >
         <div className="container mx-auto px-4 py-8">
-          {/* Beige card container */}
           <div className="bg-[#E8DCC3] rounded-lg shadow-md p-6 sm:p-8 md:p-10 w-full max-w-5xl mx-auto">
             <div className="flex flex-col md:flex-row gap-6 items-stretch md:h-[40rem]">
               {/* Left: Orange “Åpningstider” box */}
@@ -113,11 +108,13 @@ export default function Home() {
               </div>
 
               {/* Right: Photo */}
-              <div className="w-full md:w-1/2 flex items-center justify-center">
-                <img
+              <div className="w-full md:w-1/2 relative h-64 md:h-full">
+                <Image
                   src="/kjokkenet_7.jpg"
                   alt="Photo"
-                  className="md:h-full w-auto object-cover rounded shadow"
+                  fill               
+                  className="object-cover rounded shadow"
+                  sizes="(min-width: 768px) 50vw, 100vw"
                 />
               </div>
             </div>
@@ -130,16 +127,18 @@ export default function Home() {
       <section id="contact" className="min-h-screen flex bg-[#7c9885]">
         <div className="w-full flex flex-col md:flex-row">
           {/* Left: Kontakt oss photo */}
-          <div className="w-full md:w-1/2 h-screen">
-            <img
+          <div className="w-full md:w-1/2 h-64 md:h-screen relative">
+            <Image
               src="/kjokkenet_20.webp"
               alt="Kontakt oss photo"
-              className="w-full h-full object-cover"
+              fill
+              className="object-cover"
+              sizes="(min-width: 768px) 50vw, 100vw"
             />
           </div>
 
           {/* Right: Kontakt oss text box */}
-          <div className="w-full md:w-1/2 h-screen flex items-center justify-center p-8">
+          <div className="w-full md:w-1/2 h-auto md:h-screen flex items-start md:items-center justify-center pt-4 md:pt-0 px-4 md:px-8">
             <div className="text-center">
               <h2 className="text-4xl text-white font-bold mb-2">
                 Kontakt oss

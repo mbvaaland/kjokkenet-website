@@ -122,11 +122,11 @@ export function InHouseMenu() {
                 <div className="flex justify-between items-start gap-4">
                   <div className="flex-1">
                     <h4 className="font-bold text-[#4a5d4a] mb-1">{item.name}</h4>
-                    {item.description && (
+                    {"description" in item && item.description && (
                       <p className="text-sm text-gray-600 leading-relaxed">
                         {item.description}
                       </p>
-                    )}
+                   )}
                   </div>
                   {item.price !== undefined && (
                     <div className="text-right flex-shrink-0">

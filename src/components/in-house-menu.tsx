@@ -150,12 +150,12 @@ export function InHouseMenu() {
           <div className="flex items-center gap-2 mb-3">
             <Info className="h-6 w-6 text-[#4a5d4a]" />
           </div>
-          <div className="text-sm text-gray-600 space-y-3 pt-1">
-            <p>• Me har glutenfritt brød til 25kr ekstra</p>
-            <p>• Soya, havre, krem m.m. 7kr ekstra</p>
-            <p>• Me har også div. smakstilsetninger</p>
-            <p>• Det kan være variasjon av grønnsaker alt etter tilgang på råvarer</p>
-          </div>
+          <ul className=" list-disc list-outside pl-6 text-sm text-gray-600 space-y-2 pt-1">
+            <li>Me har glutenfritt brød til 25kr ekstra</li>
+            <li>Soya, havre, krem m.m. 7kr ekstra</li>
+            <li>Me har også div. smakstilsetninger</li>
+            <li>Grønnsaker kan variere alt etter tilgang på råvarer</li>
+          </ul>
         </div>
       </div>
     </div>

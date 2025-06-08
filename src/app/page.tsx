@@ -168,7 +168,7 @@ export default function Home() {
                 Adresse: Storgata 44, 4340 Bryne
               </p>
               {/* Social Icons */}
-              <div className="flex items-center justify-center space-x-6 mt-6">
+              <div className="flex items-center justify-center space-x-6 mt-6 mb-8">
                 <a
                   href="https://www.facebook.com/KjokkenetBryne/"
                   target="_blank"
